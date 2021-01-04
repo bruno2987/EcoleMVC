@@ -1,0 +1,13 @@
+# les deux lignes suivantes permettent de redirigé l'url vers index.php si on met etudiant dans l'URL.
+#ça redéfinit le routage vers index.php si l'util
+
+RewriteEngine on
+
+#RewriteRule ^etudiant$ index.php     (on le met en commentaire car etudiant sera compris dans la règle qu'on écrit en dessous)
+
+# La ligne suivante dit que on accepte toute expression contenant (A-Z) toute lettre en majuscule; (a-z) toute lettre en minuscule; (0-9) tout numéro et tous les - ; _ ; / 
+# et on réécri l'url avec  index.php?action=$1 . $1 contient ce qui a été tapé.
+# l'étoile (*) après les crochet dit qu'on accepte plusieurs de ces caractères (sans ça il n'accepterait qu'un seul caractère)
+# ^..........$    ^ = commence     $= finit 
+
+RewriteRule ^([A-Za-z0-9\-\_\/]*)$ index.php?action=$1
