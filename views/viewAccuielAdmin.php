@@ -9,9 +9,9 @@ require_once('header.php');
 
 <?php
 
-echo '<a href="index.php?action=controllerEtudiants/addOnePerson">nouvelle inscription</a><br>';
-echo '<a href="index.php?action=controllerCours/addOneCours">Nouvelle formation</a><br>';
-echo '<a href="index.php?action=controllerCours/listeCours">liste des cours existants</a><br>';
+echo '<a href="controllerEtudiants/addOnePerson">nouvelle inscription</a><br>';
+echo '<a href="controllerCours/addOneCours">Nouvelle formation</a><br>';
+echo '<a href="controllerCours/listeCours">liste des cours existants</a><br>';
 ?>
 
 

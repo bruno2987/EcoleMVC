@@ -3,7 +3,7 @@ require_once('header.php');
 ?>
 
 <div id="containLogin">
-<form id="login" action="index.php?action=controllerEtudiants/login" method="POST">
+<form id="login" action="controllerEtudiants/login" method="POST">
     <label for="email">email</label>
     <input id="champ" type="email" name="email">
 
